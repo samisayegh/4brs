@@ -1,0 +1,22 @@
+{
+  "name": "4brs",
+  "version": "0.0.0",
+  "homepage": "https://github.com/samisayegh/4brs",
+  "authors": [
+    "charlesgedeon <gedeon.charles@gmail.com>",
+    "samisayegh <samisayegh1@gmail.com>"
+  ],
+  "description": ": Four bars is a digital loop machine, that is designed to be played like an instrument.",
+  "keywords": [
+    "music",
+    "loop"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
