@@ -11,14 +11,20 @@
   <script src="../components/webcomponentsjs/webcomponents.js">
   </script>
 
-  <link rel="import" href="../components/font-roboto/roboto.html">
+
+  <link rel="import" href="../bower_components/font-roboto/roboto.html">
+  <link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+  <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 
   <style>
   html,body {
     height: 100%;
     margin: 0;
     background-color: #CE93D8;
-    font-family: 'RobotoDraft', sans-serif;
+    font-family: 'Roboto', sans-serif;
+  }
+  paper-toolbar.paper-toolbar-0 {
+    background-color: #AB47BC;
   }
   .container {
     width: 80%;
@@ -29,6 +35,12 @@
 </head>
 
 <body unresolved>
+
+  <paper-toolbar>
+    <paper-icon-button icon="menu" on-tap="menuAction"></paper-icon-button>
+    <div class="title">4bars</div>
+    <paper-icon-button icon="settings" on-tap="moreAction"></paper-icon-button>
+  </paper-toolbar>
 
 </body>
 
