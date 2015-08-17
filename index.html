@@ -11,7 +11,7 @@
   <script src="../components/webcomponentsjs/webcomponents.js">
   </script>
 
-
+  <!-- Don't forget to do bower install in 4brs directory from your command line. It'll take care of finding all the relevant components. -->
   <link rel="import" href="../bower_components/font-roboto/roboto.html">
   <link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
   <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
@@ -24,6 +24,7 @@
     background-color: #CE93D8;
     font-family: 'Roboto', sans-serif;
   }
+  /*Charles: I'm not a fan of the implementation of the paper-toolbar css below. I had to use the inspect element to figure it out but none of the official documentation points to it.*/
   paper-toolbar.paper-toolbar-0 {
     background-color: #AB47BC;
   }
@@ -39,7 +40,7 @@
 <body unresolved>
 
   <paper-toolbar>
-    <!-- I put the fullscreen button for shits and giggles but it's not functional right now -->
+    <!-- Charles: I put the fullscreen button for shits and giggles but it's not functional right now -->
     <paper-icon-button icon="fullscreen"></paper-icon-button>
     <div class="title">4bars</div>
     <paper-icon-button icon="settings"></paper-icon-button>
