@@ -1,0 +1,41 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="bar-set">
+
+  <style>
+    /* CSS rules for your element */
+    :host {
+      display: block;
+    }
+    #barSet {
+      width: 25%;
+      height: 100%;
+      background-color: white;
+
+      bottom: 0px;
+    }
+  </style>
+  
+  <template>
+    <!-- local DOM for your element -->
+
+    <div id="barSet"></div> <!-- data bindings in local DOM -->
+  </template>
+
+  <script>
+    // element registration
+    Polymer({
+      is: "bar-set",
+
+      // add properties and methods on the element's prototype
+
+      properties: {
+        // declare properties for the element's public API
+        barSet: {
+          type: Object
+        }
+      }
+    });
+  </script>
+
+</dom-module>

@@ -8,7 +8,7 @@
   <meta name="viewport" 
   content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
-  <script src="../components/webcomponentsjs/webcomponents.js">
+  <script src="../bower_components/webcomponentsjs/webcomponents.js">
   </script>
 
   <!-- Don't forget to do bower install in 4brs directory from your command line. It'll take care of finding all the relevant components. -->
@@ -16,6 +16,9 @@
   <link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
   <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
   <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+
+  <!-- Below are the 4brs components -->
+  <link rel="import" href="../bar-container.html">
 
   <style>
   html,body {
@@ -29,9 +32,11 @@
     background-color: #AB47BC;
   }
   .container {
-    width: 90%;
-    height: 75vh;
-    margin: 50px auto;
+    width: 95%;
+    height: 82vh;
+    margin: 24px auto;
+    border: 1px solid green;
+    position: relative;
   }
   </style>
 
@@ -47,8 +52,7 @@
   </paper-toolbar>
 
   <div class="container">
-    <div style="background-color: white; width: 100%; height: 100%">
-    </div>
+    <bar-container></bar-container>
   </div>
 
 </body>
