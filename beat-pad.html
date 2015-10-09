@@ -1,0 +1,44 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../beat-btn.html">
+
+<dom-module id="beat-pad">
+
+  <style>
+    /* CSS rules for your element */
+    /*:host {
+      display: block;
+    }*/
+    #beatPad {
+      width: 300px;
+      height: 100%;
+      background-color: yellow;
+      top: 0;
+      float: right;
+    }
+  </style>
+  
+  <template>
+    <!-- local DOM for your element -->
+
+    <div id="beatPad">
+      <beat-btn></beat-btn>
+    </div> <!-- data bindings in local DOM -->
+  </template>
+
+  <script>
+    // element registration
+    Polymer({
+      is: "beat-pad",
+
+      // add properties and methods on the element's prototype
+
+      properties: {
+        // declare properties for the element's public API
+        beatPad: {
+          type: Object
+        }
+      }
+    });
+  </script>
+
+</dom-module>
