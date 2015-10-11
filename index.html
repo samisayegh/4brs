@@ -20,6 +20,7 @@
   <!-- Below are the 4brs components -->
   <link rel="import" href="../bar-container.html">
   <link rel="import" href="../beat-pad.html">
+  <link rel="import" href="../bar-control.html">
 
   <style>
   html,body {
@@ -39,6 +40,20 @@
     border: 1px solid green;
     position: relative;
   }
+  /*Sami: to get the bar-control and beat-pad to render, I had to use floats. Just setting width and height was not enough. Not happy about this.*/
+  bar-control{
+  	height: 60%;
+  	width: 75%;
+  	background-color: orange;
+  	float: left;
+  }
+
+  beat-pad {
+  	height: 60%;
+  	width: 25%;
+  	background-color: blue;
+  	float:right;
+  }
   </style>
 
 </head>
@@ -53,6 +68,7 @@
   </paper-toolbar>
 
   <div class="container">
+  	<bar-control></bar-control>
   	<beat-pad></beat-pad>
     <bar-container></bar-container>
   </div>

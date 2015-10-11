@@ -1,7 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="../beat-btn.html">
 
-<dom-module id="beat-pad">
+<dom-module id="bar-control">
 
   <style>
     /* CSS rules for your element */
@@ -12,30 +11,19 @@
   
   <template>
     <!-- local DOM for your element -->
-    
-    <!--Sami: would like to write a loop here is possible, rather than copy pasting 9 times. -->
-      <beat-btn></beat-btn>
-      <beat-btn></beat-btn>
-      <beat-btn></beat-btn>
-      <beat-btn></beat-btn>
-      <beat-btn></beat-btn>
-      <beat-btn></beat-btn>
-      <beat-btn></beat-btn>
-      <beat-btn></beat-btn>
-      <beat-btn></beat-btn>
-  <!-- data bindings in local DOM -->
+    <!-- data bindings in local DOM -->
   </template>
 
   <script>
     // element registration
     Polymer({
-      is: "beat-pad",
+      is: "bar-control",
 
       // add properties and methods on the element's prototype
 
       properties: {
         // declare properties for the element's public API
-        beatPad: {
+        beatBtn: {
           type: Object
         }
       }
