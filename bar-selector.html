@@ -1,34 +1,31 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="../bar-set.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
 
-<dom-module id="bar-container">
+<dom-module id="bar-selector">
 
   <style>
     /* CSS rules for your element */
-    :host {
-      display: block;
-    }      
   </style>
   
   <template>
     <!-- local DOM for your element -->
-      <bar-set></bar-set>
-      <bar-set></bar-set>
-      <bar-set></bar-set>
-      <bar-set></bar-set>
+    <paper-card heading="A"></paper-card>
+    <paper-card heading="A"></paper-card>
+    <paper-card heading="A"></paper-card>
+    <paper-card heading="A"></paper-card>
     <!-- data bindings in local DOM -->
   </template>
 
   <script>
     // element registration
     Polymer({
-      is: "bar-container",
+      is: "bar-selector",
 
       // add properties and methods on the element's prototype
 
       properties: {
         // declare properties for the element's public API
-        barSet: {
+        barSelector: {
           type: Object
         }
       }

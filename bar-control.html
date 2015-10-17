@@ -1,17 +1,34 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bar-selector.html">
 
 <dom-module id="bar-control">
 
   <style>
     /* CSS rules for your element */
-    /*:host {
-      display: block;
-    }*/
+    .barSelector {
+      background-color: pink;
+      padding: 0 38%;
+    }
+    .lollipopControl {
+      background-color: yellow;
+      padding: 0 40%;
+    }
+    paper-icon-button {
+      width:80px;
+      height: 80px;
+    }
   </style>
   
   <template>
     <!-- local DOM for your element -->
     <!-- data bindings in local DOM -->
+    <div class="barSelector">
+      <bar-selector></bar-selector>
+    </div>
+    <div class="lollipopControl">
+      <paper-icon-button icon="av:play-arrow"></paper-icon-button>
+      <paper-icon-button icon="av:pause"></paper-icon-button>
+    </div>
   </template>
 
   <script>
